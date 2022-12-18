@@ -9,15 +9,8 @@ app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
   const headers = {
-    hostname: req.hostname,
     method: req.method,
     url: req.originalUrl,
-    protocol: req.protocol,
-    secure: req.secure,
-    xhr: req.xhr,
-    fresh: req.fresh,
-    stale: req.stale,
-    ip: req.ip,
   }
 
   const response = {
