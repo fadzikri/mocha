@@ -8,8 +8,9 @@
     <title>Mocha Home</title>
 </head>
 <body>
-    <pre>request.header: <% for (const property in header) { %>
-  <%- `${property}: ${header[property]}` %><% } %>
+    <pre>Request : <% for (const property in headersOne) { %>
+  <%- `${property.replace(/^\w|-\w/g, (c) => c.toUpperCase())}: ${headersOne[property]}` %><% } %><% for (const property in headersTwo) { %>
+  <%- `${property.replace(/^\w|-\w/g, (c) => c.toUpperCase())}: ${headersTwo[property]}` %><% } %>
     </pre>
 </body>
 </html>

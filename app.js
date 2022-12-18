@@ -8,10 +8,21 @@ app.use(favicon("favicon.ico"));
 app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
-  let header = req.headers;
-  
+  const headers = {
+    hostname: req.hostname,
+    method: req.method,
+    url: req.originalUrl,
+    protocol: req.protocol,
+    secure: req.secure,
+    xhr: req.xhr,
+    fresh: req.fresh,
+    stale: req.stale,
+    ip: req.ip,
+  }
+
   res.render('pages/index', {
-    header
+    headersOne: headers,
+    headersTwo: req.headers
   })
 })
 
