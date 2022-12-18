@@ -9,7 +9,7 @@ app.use(favicon("favicon.ico"));
 app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
-  const browser = detect();
+  const browser = detect(req.headers['user-agent']);
 
   const headers = {
     method: req.method,
