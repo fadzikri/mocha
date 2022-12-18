@@ -13,7 +13,9 @@ Catatan : Tautan pendek terkadang lama loading-nya.
 Todo :
 
 - [x] Order and Sort
-- [ ] Service Worker Offline First Cache and Fallback to Cache
+- [x] Service Worker Offline First Cache and Fallback to Cache
+
+Cache automatically update, every refresh. Use service worker from <https://github.com/TalAter/UpUp>
 
 Inspiration from <https://reinforce.moe/echo>\
 I made this just for my homepage
