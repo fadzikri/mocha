@@ -5,7 +5,8 @@ const { detect } = require('detect-browser');
 const app = express()
 const port = 3000
 
-app.use(favicon("favicon.ico"));
+app.use(favicon("./views/favicon.ico"));
+app.use(express.static("./views"))
 app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
@@ -18,7 +19,7 @@ app.get('/', (req, res) => {
     OS: browser.os
   }
 
-  res.render('pages/index', {
+  res.render('index', {
     headersOne: headers,
     headersTwo: req.headers,
   })
