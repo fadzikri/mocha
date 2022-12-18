@@ -10,8 +10,7 @@
 </head>
 <body>
     <pre><% for (const property in headersOne) { %>
- <%- `${property.replace(/^\w|-\w/g, (c) => c.toUpperCase())}: ${headersOne[property]}` %><% } %><% for (const property in response) { %>
-   <%- `${property.replace(/^\w|-\w/g, (c) => c.toUpperCase())}: ${response[property]}` %><% } %><% for (const property in headersTwo) { %>
+ <%- `${property.replace(/^\w|-\w/g, (c) => c.toUpperCase())}: ${headersOne[property]}` %><% } %><% for (const property in headersTwo) { %>
    <%- `${property.replace(/^\w|-\w/g, (c) => c.toUpperCase())}: ${headersTwo[property]}` %><% } %>
     </pre>
 </body>
