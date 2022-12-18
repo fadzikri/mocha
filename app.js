@@ -4,12 +4,17 @@ const favicon = require('serve-favicon');
 const app = express()
 const port = 3000
 
-app.use(favicon(`${__dirname}/favicon.ico`));
+app.use(favicon("favicon.ico"));
+app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
-  res.json(req.headers);
+  let header = req.headers;
+  
+  res.render('pages/index', {
+    header
+  })
 })
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
+  console.log(`Aplikasi berjalan di http://localhost:${port}`)
 })
