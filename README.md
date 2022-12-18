@@ -14,4 +14,5 @@ Todo :
 
 - [x] Order and Sort
 
-Inspiration from <https://reinforce.moe/echo>
+Inspiration from <https://reinforce.moe/echo>\
+I made this just for my homepage
