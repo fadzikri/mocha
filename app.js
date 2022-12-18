@@ -11,11 +11,11 @@ app.set('view engine', 'ejs');
 app.get('/', (req, res) => {
   const browser = detect();
 
-  console.log(browser)
-
   const headers = {
     method: req.method,
     url: req.originalUrl,
+    browser: browser.name,
+    OS: browser.os
   }
 
   res.render('pages/index', {
