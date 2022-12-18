@@ -13,14 +13,9 @@ app.get('/', (req, res) => {
     url: req.originalUrl,
   }
 
-  const response = {
-    ['header-sent']: res.headersSent
-  }
-
   res.render('pages/index', {
     headersOne: headers,
     headersTwo: req.headers,
-    response
   })
 })
 
