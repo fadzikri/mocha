@@ -16,7 +16,7 @@ module.exports = {
         	cacheName: 'last-cache',
 				expiration: {
 					maxEntries: 5,
-					maxAgeSeconds: 1,
+					maxAgeSeconds: 60 * 60 * 24 * 1,
 				},
       		},
 		}
