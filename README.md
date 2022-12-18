@@ -12,4 +12,4 @@ Catatan : Tautan pendek terkadang lama loading-nya.
 
 Todo :
 
-- [ ] Order and Sort
+- [x] Order and Sort
