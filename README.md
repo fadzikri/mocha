@@ -13,3 +13,5 @@ Catatan : Tautan pendek terkadang lama loading-nya.
 Todo :
 
 - [x] Order and Sort
+
+Inpiration from <https://reinforce.moe/echo>
