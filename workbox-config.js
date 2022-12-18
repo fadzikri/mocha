@@ -11,12 +11,12 @@ module.exports = {
 	runtimeCaching: [
 		{
 			urlPattern: '/',
-      		handler: 'NetworkFirst',
+      		handler: 'CacheFirst',
       		options: {
         	cacheName: 'last-cache',
 				expiration: {
 					maxEntries: 5,
-					maxAgeSeconds: 60 * 60 * 24 * 1,
+					maxAgeSeconds: 1,
 				},
       		},
 		}
