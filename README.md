@@ -15,7 +15,7 @@ Todo :
 - [x] Order and Sort
 - [x] Service Worker Offline First Cache and Fallback to Cache
 
-Cache automatically update, every refresh. Use service worker from <https://github.com/TalAter/UpUp>
+Cache automatically update, every refresh. Use service worker from ~<https://github.com/TalAter/UpUp>~ Workbox by Google.
 
 Inspiration from <https://reinforce.moe/echo>\
 I made this just for my homepage

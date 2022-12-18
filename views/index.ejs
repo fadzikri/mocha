@@ -36,16 +36,12 @@
 Headers: <% for (const property in headersTwo) { %><% headersTwoData.push(`${property.replace(/^\w|-\w/g, (c) => c.toUpperCase())}: ${headersTwo[property]}`) %><% } %><% headersTwoData.sort().forEach((data) => {%>
    <%- data %><% }); %>
     </pre>
-    <script src="upup.min.js"></script>
     <script>
-        UpUp.start({
-            'content-url': '/',
-            'assets': [
-                'favicon.ico',
-                'upup.min.js',
-                'upup.sw.min.js'
-            ]
-        });
+        window.addEventListener("load", () => {
+            if ("serviceWorker" in navigator) {
+                navigator.serviceWorker.register("sw.js")
+            }
+        })
     </script>
 </body>
 </html>
