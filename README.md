@@ -13,6 +13,7 @@ Catatan : Tautan pendek terkadang lama loading-nya.
 Todo :
 
 - [x] Order and Sort
+- [ ] Service Worker Offline First Cache and Fallback to Cache
 
 Inspiration from <https://reinforce.moe/echo>\
 I made this just for my homepage
