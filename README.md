@@ -19,3 +19,7 @@ Cache automatically update, every refresh. Use service worker from ~<https://git
 
 Inspiration from <https://reinforce.moe/echo>\
 I made this just for my homepage
+
+---
+
+07 January 2023 - Project Finished
